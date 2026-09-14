@@ -2,4 +2,11 @@ body {
     margin: 0;
     background: pink;
     text-align: center;
-} 
+}
+.center-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
