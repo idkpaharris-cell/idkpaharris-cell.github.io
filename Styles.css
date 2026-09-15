@@ -18,3 +18,12 @@ body {
     justify-content: center;
     align-items: center;
 }
+.left-container {
+    background-color:aqua;
+}
+.center-container {
+    background-color: lightgreen;
+}
+.right-container {
+    background-color: lightpink;
+}
