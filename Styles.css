@@ -3,10 +3,18 @@ body {
     background: pink;
     text-align: center;
 }
-.center-container {
+
+.three-sections {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    min-height: 100vh;
+}
+
+.left-container,
+.center-container,
+.right-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100vh;
 }
