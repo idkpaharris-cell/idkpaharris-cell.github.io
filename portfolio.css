@@ -1,3 +1,10 @@
 body { Margin: 0;
     text-align:center
 }
+.left-container,
+.center-container,
+.right-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
