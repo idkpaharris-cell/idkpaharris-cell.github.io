@@ -2,15 +2,76 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Styles.css">
     <title>About Me</title>
 </head>
-    <h1>About Me</h1>
-    <p> Hello, my name is Patrick Harris. I am a beginner developer and (hopefully) a future cyber security professional.
-        I am extremely fascinated with technology and really enjoy learning the different aspects that go into making it all work.
-        Though it is all extremly complicated to me I am determined to try my best and soak up as much information as I can. 
-        A few things I enjoy in my off time are playing video games, playing different instruments, and learning new things.
-        My favorite video game at the moment is Overwatch, I usually play with friends since I am not very good at it.
-        My favorite shows/movies are probably A silent voice, Jujitzu Kaisen, and Chainsaw Man.
-    </p>
-   <a href="index.html">Back to Home</a>
+<body>
+    <nav class="site-nav" aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="about_me.html" aria-current="page">About</a>
+        <a href="resume.html">Resume</a>
+        <a href="portfolio.html">Portfolio</a>
+    </nav>
+
+    <main class="about-page">
+        <header class="intro">
+            <p class="eyebrow">A little about me</p>
+            <div class="about-intro-grid">
+                <div>
+                    <h1>Patrick<br>Harris<span>.</span></h1>
+                    <p class="intro-line">Beginner developer. Future cybersecurity professional.</p>
+                </div>
+                <figure class="portrait-swap" tabindex="0" aria-label="Patrick Harris portrait; focus or hover to see a childhood photo">
+                    <img class="portrait-young" src="Young%20patrick.jpg" alt="Patrick Harris as a child">
+                    <img class="portrait-current" src="Patrick%20potrait.jpg" alt="Portrait of Patrick Harris">
+                </figure>
+            </div>
+        </header>
+
+        <div class="about-grid">
+            <section class="story" aria-labelledby="story-heading">
+                <h2 id="story-heading">A few things about me</h2>
+                <p>Hello, my name is Patrick Harris. I am a beginner developer and (hopefully) a future cybersecurity professional.</p>
+                <p>I am fascinated by technology and really enjoy learning the different aspects that go into making it all work. Though it is all extremely complicated to me, I am determined to try my best and soak up as much information as I can.
+                    I started off my technology journey by playing video games, on my dads xbox 360. I was fascinated by the technology that went into running the different visuals and graphical components of the games.
+                    I hope to someday pursue a career in cybersecurity, but my dream career is to develop video games. Whether it be designing characters, graphics, music composition, or environments. 
+                </p>
+                <div class="mii-feature">
+                    <img class="about-portrait" src="Patrick%20Mii.jpg" alt="A character that represents Patrick">
+                    <p>A few things I enjoy in my off time are playing video games, playing different instruments, working out, and learning new things.
+                        I've been learning guitar for the past couple of months completely on my own. I hope to make music eventually as a passion project and hopefully learn to understand music theory.
+                    </p>
+                </div>
+            </section>
+
+            <aside class="interests" aria-labelledby="interests-heading">
+                <p class="eyebrow">Outside of computer tech</p>
+                <h2 id="interests-heading">Current favorites</h2>
+                <dl>
+                    <div>
+                        <dt>On screen</dt>
+                        <dd>Overwatch. I usually play with friends since I am not very good at it.</dd>
+                    </div>
+                    <div>
+                        <dt>Shows &amp; movies</dt>
+                        <dd><i>A Silent Voice</i>, <i>Jujutsu Kaisen</i>, and <i>Chainsaw Man</i>.</dd>
+                    </div>
+                    <div>
+                        <dt>Off screen</dt>
+                        <dd>Playing instruments and learning new things.</dd>
+                    </div>
+                    <div>
+                        <dt>Music</dt>
+                        <dd>My current favorite song is: <a href="https://open.spotify.com/track/5eDl0AVa6VkbW8UYzptzCj?si=21b4cd120be0467b" target="_blank" rel="noopener noreferrer">"not on your own"</a>. by <a href="https://open.spotify.com/artist/2XOxFoWBxYr7IXSdM2QkJn?si=iA0K5XROTIKBFKxwnmBtug" target="_blank" rel="noopener noreferrer"><i>gone like summer</i></a></dd>
+                    </div>
+                </dl>
+                <section class="social-links" aria-labelledby="social-links-heading">
+                    <h3 id="social-links-heading">Other places to find me</h3>
+                    <a href="https://www.instagram.com/idk._gaming/" target="_blank" rel="noopener noreferrer">Instagram</a><br>
+                    <a href="https://www.facebook.com/patrick.harris.351104/" target="_blank" rel="noopener noreferrer">Facebook</a>
+                </section>
+            </aside>
+        </div>
+    </main>
+</body>
 </html>

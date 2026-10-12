@@ -2,27 +2,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="portfolio.css">
+    <link rel="stylesheet" href="Styles.css">
     <title>Portfolio</title>
 </head>
 <body>
-    <main>
-        <h1>My Portfolio</h1>
-        <p>Welcome to my portfolio.</p>
-        <div class="three-sections">
-            <section class="left-container">
-                <p><a href="Coding_projects.html">Coding Projects</a></p>
-            </section>
-            <section class="center-container">
-                <p><a href="Other_projects.html">Other Projects</a></p>
-            </section>
-            <section class="right-container">
-                <p><a href="Personal_portfolio.html">Personal Portfolio</a></p>
-            </section>
-        </div>
+    <nav class="site-nav" aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="about_me.html">About</a>
+        <a href="resume.html">Resume</a>
+        <a href="portfolio.html" aria-current="page">Portfolio</a>
+    </nav>
+
+    <main class="portfolio-page">
+        <header class="portfolio-intro">
+            <p class="eyebrow">Projects &amp; experiments</p>
+            <h1>My Portfolio<span>.</span></h1>
+            <p>Welcome to my portfolio.</p>
+        </header>
+
+        <nav class="project-grid" aria-label="Project categories">
+            <a class="project-card project-code" href="Coding_projects.html">
+                <span class="project-index">01 / Code</span>
+                <span class="project-title">Coding Projects</span>
+                <span class="project-action">Explore projects</span>
+            </a>
+            <a class="project-card project-other" href="Other_projects.html">
+                <span class="project-index">02 / Other work</span>
+                <span class="project-title">Other Projects</span>
+                <span class="project-action">Explore projects</span>
+            </a>
+            <a class="project-card project-personal" href="Personal_portfolio.html">
+                <span class="project-index">03 / Personal</span>
+                <span class="project-title">Personal Portfolio</span>
+                <span class="project-action">Explore projects</span>
+            </a>
+        </nav>
     </main>
-    <footer class="page-footer">
-        <a href="index.html">Back to Home</a>
-    </footer>
 </body>
 </html>

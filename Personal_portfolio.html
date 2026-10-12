@@ -1,15 +1,42 @@
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Personal Portfolio</title>
-    </head>
-    <body>
-        <h1>My Personal Portfolio</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-        </p>
-        <a href="portfolio.html">Back to Portfolio</a>
-    </body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Styles.css">
+    <title>Personal Portfolio</title>
+</head>
+<body>
+    <nav class="site-nav" aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="about_me.html">About</a>
+        <a href="resume.html">Resume</a>
+        <a href="portfolio.html">Portfolio</a>
+    </nav>
+
+    <main class="portfolio-page">
+        <header class="portfolio-intro">
+            <p class="eyebrow">Project archive / personal work</p>
+            <h1>Personal Portfolio<span>.</span></h1>
+            <p>This space is reserved for personal work. Details will be added over time.</p>
+        </header>
+
+        <section class="project-grid" aria-label="Future personal projects">
+            <article class="project-card project-personal project-slot">
+                <span class="project-index">01 / Project slot</span>
+                <span class="project-title">Coming soon</span>
+                <span class="project-action">Project details will be added here.</span>
+            </article>
+            <article class="project-card project-personal project-slot">
+                <span class="project-index">02 / Project slot</span>
+                <span class="project-title">Coming soon</span>
+                <span class="project-action">Project details will be added here.</span>
+            </article>
+            <article class="project-card project-personal project-slot">
+                <span class="project-index">03 / Project slot</span>
+                <span class="project-title">Coming soon</span>
+                <span class="project-action">Project details will be added here.</span>
+            </article>
+        </section>
+    </main>
+</body>
 </html>
