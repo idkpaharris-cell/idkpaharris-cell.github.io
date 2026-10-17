@@ -48,9 +48,6 @@
             <label for="contact-email">Email</label>
             <input id="contact-email" name="email" type="email" required>
 
-            <label for="contact-message">Message</label>
-            <textarea id="contact-message" name="message" rows="5" required></textarea>
-
             <p id="form-feedback" aria-live="polite"></p>
             <button type="submit">Send message</button>
         </form>
@@ -61,7 +58,6 @@
 
             const name = document.getElementById("contact-name").value.trim();
             const email = document.getElementById("contact-email").value.trim();
-            const message = document.getElementById("contact-message").value.trim();
             const missingFields = [];
 
             if (!name) {
@@ -70,22 +66,13 @@
             if (!email) {
                 missingFields.push("email");
             }
-            if (!message) {
-                missingFields.push("message");
-            }
 
             const feedback = document.getElementById("form-feedback");
             if (missingFields.length > 0) {
                 feedback.textContent = "Please enter your " + missingFields.join(" and ") + ".";
-            } else if (!document.getElementById("contact-email").checkValidity()) {
-                feedback.textContent = "Please enter a valid email address.";
             } else {
-                const subject = "Website message from " + name;
-                const body = "Name: " + name + "\nEmail: " + email + "\n\n" + message;
-                event.currentTarget.querySelector('button[type="submit"]').textContent = "Message ready to send";
-                window.location.href = "mailto:idk.paharris@gmail.com?subject="
-                    + encodeURIComponent(subject)
-                    + "&body=" + encodeURIComponent(body);
+                feedback.textContent = "Message received";
+                event.currentTarget.reset();
             }
         });
     </script>
